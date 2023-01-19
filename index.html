@@ -5,22 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chik-chik - Барбершоп</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <img class="header__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik">
-      <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#price" class="navigetion__link">Стоимость услуг</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#about" class="navigetion__link">О нас</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="#reserve" class="header__link main-link">Записаться</a>
+      <div class="header__container">
+        <img class="header__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik" width="70" height="40">
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#price" class="navigetion__link">Стоимость услуг</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#about" class="navigetion__link">О нас</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#reserve" class="header__link main-link">Записаться</a>
+      </div>
     </div>
   </header>
 
@@ -37,7 +42,7 @@
               <li class="slider__item">
                 <img class="slider__img" src="img/photo01.jpg" alt="">
               </li>
-              <li class="slider__item">
+              <li class="slider__item slider__item-active">
                 <img class="slider__img" src="img/photo02.jpg" alt="">
               </li>
               <li class="slider__item">
@@ -74,57 +79,63 @@
         <div class="price__wrapper-content">
           <div class="price__content">
             <ul class="price__list">
-              <li class="praice__item">
-                <span>Стрижка ножницами</span>
-                <span>2500 руб</span>
+              <li class="price__item">
+                <span class="price__item-title">Стрижка ножницами</span>
+                <span class="price__item-count">2500 руб</span>
               </li>
-              <li class="praice__item">
-                <span>Стрижка машинкой</span>
-                <span>2000 руб</span>
+              <li class="price__item">
+                <span class="price__item-title">Стрижка машинкой</span>
+                <span class="price__item-count">2000 руб</span>
               </li>
-              <li class="praice__item">
-                <span>Стрижка + Стрижка бороды</span>
-                <span>3000 руб</span>
+              <li class="price__item">
+                <span class="price__item-title">Стрижка + Стрижка бороды</span>
+                <span class="price__item-count">3000 руб</span>
               </li>
-              <li class="praice__item">
-                <span>Стрижка + Моделирование бороды</span>
-                <span>4000 руб</span>
+              <li class="price__item">
+                <span class="price__item-title">Стрижка + Моделирование бороды</span>
+                <span class="price__item-count">4000 руб</span>
               </li>
-              <li class="praice__item">
-                <span>Бритье головы</span>
-                <span>1500 руб</span>
+              <li class="price__item">
+                <span class="price__item-title">Бритье головы</span>
+                <span class="price__item-count">1500 руб</span>
               </li>
-              <li class="praice__item">
-                <span>Укладка</span>
-                <span>1500 руб</span>
+              <li class="price__item">
+                <span class="price__item-title">Укладка</span>
+                <span class="price__item-count">1500 руб</span>
               </li>
-              <li class="praice__item">
-                <span>Оформление бровей</span>
-                <span>1000 руб</span>
+              <li class="price__item">
+                <span class="price__item-title">Оформление бровей</span>
+                <span class="price__item-count">1000 руб</span>
               </li>
             </ul>
-            <a href="#reserve" class="praicr__link main-link">Записаться</a>
+            <a href="#reserve" class="pricr__link main-link">Записаться</a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="about" id="about">
-      <div class="container">
+      <div class="container">        
         <h2 class="about__title">Мы&nbsp;помогаем всем мужчинам выглядеть уверенно</h2>
         <p class="about__dessription">Сhik chik&nbsp;&mdash; это намного больше, чем просто барберная. Это место, где вам помогут найти свой собственный, неповторимый стиль. Стоит довериться нашим мастерам один раз, и, поверьте, новый образ не&nbsp;оставит Вас равнодушным. Мужские стрижки и&nbsp;опасное бритье&nbsp;&mdash; это наш профиль, и&nbsp;мы&nbsp;уверены, что наши барберы делают это лучше всех.</p>
         <ul class="about__list">
-          <li class="about__item">
-            <h3 class="about__item-title">Топ специалисты</h3>
-            <p class="about__item-description">Мы&nbsp;подстрижем вас на&nbsp;высшем уровне</p>
+          <li class="about__item about__item-left">
+            <div class="about__item-content">
+              <h3 class="about__item-title">Топ специалисты</h3>
+              <p class="about__item-description">Мы&nbsp;подстрижем вас на&nbsp;высшем уровне</p>   
+            </div>            
           </li>
-          <li class="about__item">
-            <h3 class="about__item-title">Mастера бород и усов</h3>
-            <p class="about__item-description">Мы&nbsp;заботливо уложим вашу бороду и&nbsp;усы</p>
+          <li class="about__item about__item-center">
+            <div class="about__item-content">
+              <h3 class="about__item-title">Mастера бород и усов</h3>
+              <p class="about__item-description">Мы&nbsp;заботливо уложим вашу бороду и&nbsp;усы</p>
+            </div>            
           </li>
-          <li class="about__item">
-            <h3 class="about__item-title">Гарантия качества</h3>
-            <p class="about__item-description">Мы&nbsp;используем только профессиональные средства</p>
+          <li class="about__item about__item-right">
+            <div class="about__item-content">
+              <h3 class="about__item-title">Гарантия качества</h3>
+              <p class="about__item-description">Мы&nbsp;используем только профессиональные средства</p>
+            </div>            
           </li>
         </ul>
       </div>
@@ -276,7 +287,7 @@
               </fieldset>
             </fieldset>
           </div>
-          <button class="reserve__btn main-link">Записаться</button>
+          <button class="reserve__btn main-link" disabled>Записаться</button>
         </form>    
       </div> 
     </section>
@@ -284,22 +295,26 @@
 
   <footer class="footer">
     <div class="container">
-      <img class="footer__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik">
-      <nav class="footer__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#price" class="navigetion__link">Стоимость услуг</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#about" class="navigetion__link">О нас</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="developers">
-        <li class="developers__designer">Designer: Anastasia Ilina</li>
-        <li class="developers__developer">Developer: Alesia Paulava</li>
-      </ul>
-      <p class="copyright">© chik chik, 2023</p>
+      <div class="footer__container">
+        <img class="footer__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik">
+        <div class="footer__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#price" class="navigetion__link">Стоимость услуг</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#about" class="navigetion__link">О нас</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="developers">
+          <li class="developers__designer">Designer: Anastasia Ilina</li>
+          <li class="developers__designer">Developer: Alesia Paulava</li>
+        </ul>              
+      </div>    
+      <div class="copyright-block">
+        <p class="copyright">© chik chik, 2023</p>
+      </div>    
     </div>
   </footer>
     
