@@ -116,6 +116,10 @@ img {
 
 /*hero-slider*/
 
+.hero__slider {
+  min-height: 372px; /*Для прелоуда*/
+}
+
 .slider {
   overflow: hidden;
   position: relative;
@@ -332,10 +336,104 @@ img {
   line-height: 130%;
 }
 
+/*reserve*/
+.reserve {
+  padding: 62px 0 124px;
+}
+
+.reserve__title {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.reserve__list {
+  padding-left: 24px;
+  margin: 0 72px;
+  line-height: 150%;
+}
+
+.reserve__item {
+  margin-bottom: 8px;
+}
+
+.reserve__item:last-child {
+  margin-bottom: 0px;
+}
+
+.reserve__form-container {
+  margin-bottom: 40px;
+}
+.reserve__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  border: none;
+  margin: 0 0 72px;
+  gap: 8px;
+}
+
+.reserve__fieldset:last-child {
+  margin-bottom: 0;
+}
+
+.reserve__legend {
+  margin-bottom: 24px;
+  flex-basis: 100%;
+  font-size: 22px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+
+.radio__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio__label {
+  display: inline-block;
+  padding: 16px 24px;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #BFBDB2;
+  border-radius: 36px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.radio__label:hover {
+  color: #EFE7BE;
+}
+
+.radio__input:focus-visible + .radio__label,
+.radio__input:checked + .radio__label {
+  color: #241D1C;
+  background-color: #F6F3E3;
+}
+
+.radio__label-spec {
+  padding-left: 52px;
+  background-image: var(--bg-image);
+  background-size: 36px;
+  background-position: 8px;
+  background-repeat: no-repeat;
+}
+
+.reserve__fieldset-sub {
+  flex-basis: 100%;
+  margin-bottom: 24px;
+  border: none;
+}
+
 /*footer*/
 
 .footer {
-  padding: 62px 0 24px;
+  padding: 0 0 24px;
 }
 
 .footer__container {
