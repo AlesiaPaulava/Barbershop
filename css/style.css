@@ -85,6 +85,7 @@ img {
   background-color: #F6F3E3;
   text-decoration: none;
   cursor: pointer;
+  border: none;
 }
 
 .main-link:hover:not(:disabled) {
@@ -243,7 +244,7 @@ img {
 
 /*about*/
 .about {
-  padding: 62px 0;
+  padding: 32px 0;
 }
 
 .about__title {
@@ -350,7 +351,7 @@ img {
 
 .reserve__list {
   padding-left: 24px;
-  margin: 0 72px;
+  margin: 0 0 72px;
   line-height: 150%;
 }
 
@@ -425,8 +426,13 @@ img {
 }
 
 .reserve__fieldset-sub {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
   flex-basis: 100%;
+  margin: 0;
   margin-bottom: 24px;
+  padding: 0;
   border: none;
 }
 
