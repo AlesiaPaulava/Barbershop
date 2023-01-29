@@ -162,7 +162,11 @@
 
   .radio__label-spec {
     padding-left: 40px;
-    background-size: 24px;
+  }
+
+  .radio__label-spec::before {
+    width: 24px;
+    height: 24px;
   }
 }
 

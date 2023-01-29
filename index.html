@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chik-chik - Барбершоп</title>
+    
+    <!-- Фавикон генератор -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/preload.css">
@@ -19,10 +29,10 @@
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#price" class="navigetion__link">Стоимость услуг</a>
+              <a href="#price" class="navigation__link">Стоимость услуг</a>
             </li>
             <li class="navigation__item">
-              <a href="#about" class="navigetion__link">О нас</a>
+              <a href="#about" class="navigation__link">О нас</a>
             </li>
           </ul>
         </nav>
@@ -110,7 +120,7 @@
                 <span class="price__item-count">1000 руб</span>
               </li>
             </ul>
-            <a href="#reserve" class="pricr__link main-link">Записаться</a>
+            <a href="#reserve" class="price__link main-link">Записаться</a>
           </div>
         </div>
       </div>
@@ -154,7 +164,7 @@
 
         <form class="reserve__form">
           <div class="reserve__form-container">
-            <fieldset class="reserve__fieldset">
+            <fieldset class="reserve__fieldset reserve__fieldset-service" name="fieldservice">
               <legend class="reserve__legend">Услуга</legend>
               <label class="radio">
                 <input class="radio__input" type="radio" name="service">
@@ -192,9 +202,7 @@
               </label>
             </fieldset>
 
-            <fieldset class="reserve__fieldset">
-
-              
+            <fieldset class="reserve__fieldset" name="fieldspec">              
               <legend class="reserve__legend">Специалист</legend>
               <label class="radio">
                 <input class="radio__input" type="radio" name="spec">
@@ -222,10 +230,10 @@
               </label>
             </fieldset>
 
-            <fieldset class="reserve__fieldset">
+            <fieldset class="reserve__fieldset" name="fielddata">
               <legend class="reserve__legend">Дата и время</legend>
 
-              <fieldset class="reserve__fieldset-sub">
+              <fieldset class="reserve__fieldset-sub" name="fieldmonth">
                 <label class="radio">
                   <input class="radio__input" type="radio" name="month">
                   <span class="radio__label">Январь</span>
@@ -240,7 +248,7 @@
                 </label>
               </fieldset>
 
-              <fieldset class="reserve__fieldset-sub">
+              <fieldset class="reserve__fieldset-sub" name="fieldday">
                 <label class="radio">
                   <input class="radio__input" type="radio" name="day">
                   <span class="radio__label">18 января</span>
@@ -259,7 +267,7 @@
                 </label>
               </fieldset>
 
-              <fieldset class="reserve__fieldset-sub">
+              <fieldset class="reserve__fieldset-sub" name="fieldtime">
                 <label class="radio">
                   <input class="radio__input" type="radio" name="time">
                   <span class="radio__label">10:00-11:30</span>
@@ -291,7 +299,7 @@
               </fieldset>
             </fieldset>
           </div>
-          <button class="reserve__btn main-link" disabled>Записаться</button>
+          <button class="reserve__btn main-link" disabled id="btn">Записаться</button>
         </form>    
       </div> 
     </section>
@@ -304,16 +312,20 @@
         <div class="footer__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#price" class="navigetion__link">Стоимость услуг</a>
+              <a href="#price" class="navigation__link">Стоимость услуг</a>
             </li>
             <li class="navigation__item">
-              <a href="#about" class="navigetion__link">О нас</a>
+              <a href="#about" class="navigation__link">О нас</a>
             </li>
           </ul>
         </div>
-        <ul class="developers">
-          <li class="developers__designer">Designer: Anastasia Ilina</li>
-          <li class="developers__designer">Developer: Alesia Paulava</li>
+        <ul class="footer__developers">
+          <li class="footer__developer">
+            Designer: <a class="footer__developer-link" href="https://t.me/Mrshmallowww">Anastasia Ilina</a>
+          </li>
+          <li class="footer__developer">
+            Developer: <a class="footer__developer-link" href="https://t.me/SportgirlAlesia">Alesia Paulava</a>
+          </li>
         </ul>              
       </div>    
       <div class="copyright-block">

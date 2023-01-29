@@ -22,6 +22,7 @@ body {
   line-height: 1.2;
   background-color: #241D1C;
   color: #F6F3E3;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 img {
@@ -66,7 +67,7 @@ img {
   gap: 32px;
 }
 
-.navigetion__link {
+.navigation__link {
   color: inherit;
   text-decoration: none;
   font-size: 14px;
@@ -124,10 +125,6 @@ img {
 .slider {
   overflow: hidden;
   position: relative;
-}
-
-.slider__container {
-  /* display: none; */
 }
 
 .slider__list {
@@ -403,11 +400,10 @@ img {
   text-transform: uppercase;
   cursor: pointer;
   border: 1px solid #BFBDB2;
-  border-radius: 36px;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  border-radius: 36px;  
 }
 
-.radio__label:hover {
+.radio__label:hover:not(:disabled) {
   color: #EFE7BE;
 }
 
@@ -417,11 +413,28 @@ img {
   background-color: #F6F3E3;
 }
 
+.radio__input:disabled + .radio__label {
+  opacity: 0.3;
+}
+
 .radio__label-spec {
+  position: relative;
   padding-left: 52px;
+}
+
+.radio__label-spec::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
   background-image: var(--bg-image);
-  background-size: 36px;
-  background-position: 8px;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -451,21 +464,27 @@ img {
   border-top: 1px solid #BFBDB2;
 }
 
-.developers {
+.footer__developers {
   margin: 0;
   padding: 0;
   margin-right: 30px;
- 
-}
-
-.developers__designer {
   list-style: none;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%; 
 }
 
-.developers__designer:not(:last-child) {
+.footer__developer-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__developer-link:hover {
+  text-decoration: underline;
+  color: #BFBDB2;
+}
+
+.footer__developer:not(:last-child) {
   margin-bottom: 7px;
 }
 
@@ -473,4 +492,12 @@ img {
   margin: 0;
   font-size: 12px;
   line-height: 100%;  
+}
+
+.servise__saccess {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 8px;
+  color: #333333;
+  background-color: #ffffff;
 }
